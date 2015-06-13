@@ -16,7 +16,17 @@ class FTChinese(BaseFeedBook):
     oldest_article        = 1
     
     feeds = [
-            (u'每日新闻', 'http://www.ftchinese.com/rss/feed'),
+            (u'每日更新', 'http://www.ftchinese.com/rss/feed'),
+            (u'今日焦点','http://www.ftchinese.com/rss/news'),
+            (u'十大热门文章','http://www.ftchinese.com/rss/hotstoryby7day'),
+            (u'每日英语','http://www.ftchinese.com/rss/diglossia'),
+            (u'第一时间解读','http://www.ftchinese.com/rss/column/007000005'),
+            (u'远观中国','http://www.ftchinese.com/rss/column/007000004'),
+            (u'中国纪事','http://www.ftchinese.com/rss/column/007000007'),
+            (u'朝九晚五','http://www.ftchinese.com/rss/column/007000002'),
+            (u'生活时尚','http://www.ftchinese.com/rss/lifestyle'),
+            (u'读者有话说','http://www.ftchinese.com/rss/letter'),
+            (u'马丁 沃尔夫','http://www.ftchinese.com/rss/column/007000012')
             ]
     
     def fetcharticle(self, url, opener, decoder):
